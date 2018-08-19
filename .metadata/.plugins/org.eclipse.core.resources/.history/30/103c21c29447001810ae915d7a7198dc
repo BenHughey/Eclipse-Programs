@@ -1,0 +1,42 @@
+import java.io.*;
+public class TestShapeProject {
+
+	public static void main(String[] args) throws Exception {
+		
+		Rectangle rect[] = new Rectangle[3];
+		
+		rect[0] = new Rectangle();
+		rect[1] = new Rectangle();
+		rect[2] = new Rectangle();
+		
+		rect[0].setLength(50);
+		rect[0].setWidth(20);
+		
+		rect[1].setLength(45);
+		rect[1].setWidth(15);
+		
+		rect[2].setLength(70);
+		rect[2].setWidth(30);
+		
+		
+	
+		
+		FileOutputStream fileOut = new FileOutputStream("ShapeSerialization.txt");
+		ObjectOutputStream out = new ObjectOutputStream(fileOut);
+		out.writeObject(rect);
+		out.close();
+		
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("ShapeSerialization.txt"));
+		Rectangle serializedRect[] = (Rectangle[])in.readObject();
+		
+		/*for(Rectangle x : serializedRect ) {
+			
+			
+			System.out.println("Rectangle Area: " +x.calculateArea());
+			
+			
+		}*/
+		in.close();
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public abstract class Shape {
+	
+		private int width;
+		
+			
+		public void setWidth(int wdth) {
+			width = wdth;
+		}
+		
+		public int getWidth() {
+			return width;
+		}
+
+
+}

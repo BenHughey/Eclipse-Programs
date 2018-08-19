@@ -1,0 +1,61 @@
+import java.io.*;
+public class TestShapeProject {
+
+	public static void main(String[] args) throws Exception {
+		
+		try {
+		
+		Rectangle rect[] = new Rectangle[3];
+		//object to be serialized
+		Rectangle serialRect = new Rectangle();
+		
+		serialRect.setLength(100);
+		serialRect.setWidth(30);
+		
+		rect[0] = new Rectangle();
+		rect[1] = new Rectangle();
+		rect[2] = new Rectangle();
+		
+		rect[0].setLength(50);
+		rect[0].setWidth(20);
+		
+		rect[1].setLength(45);
+		rect[1].setWidth(15);
+		
+		rect[2].setLength(70);
+		rect[2].setWidth(30);
+		
+		for(Rectangle x : rect ) {
+		
+		
+		System.out.println("Rectangle Area: " +x.calculateArea());
+		
+		
+	}
+		
+		
+	
+		//Serialize object to ShapeSerialization.txt
+		FileOutputStream fileOut = new FileOutputStream("ShapeSerialization.txt");
+		ObjectOutputStream out = new ObjectOutputStream(fileOut);
+		out.writeObject(serialRect);
+		out.close();
+		
+		//creates new Rectangle object from ShapeSerialization.txt
+		ObjectInputStream in = new ObjectInputStream(new FileInputStream("ShapeSerialization.txt"));
+		Rectangle serializedRect = (Rectangle)in.readObject();
+		in.close();
+		
+		//Prints serialized rectangle length and width
+		System.out.println("Serialized rectangle length : " + serializedRect.getLength());
+		System.out.println("Serialized rectangle Width : " + serializedRect.getWidth());
+		
+		
+		
+		}catch(Exception e) {
+			e.printStackTrace();
+			
+		}
+	}
+
+}

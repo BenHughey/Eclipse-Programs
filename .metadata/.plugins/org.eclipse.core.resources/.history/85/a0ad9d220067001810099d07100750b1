@@ -1,0 +1,18 @@
+package Memory;
+import javax.swing.JButton;
+
+public class Card extends JButton {
+
+	
+	private String iconName = null;
+	public void setIconName(String s) {
+		iconName = s;
+		
+	}
+	public String getIconName() {
+		return iconName;
+	}
+
+	
+
+}

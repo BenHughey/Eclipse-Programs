@@ -1,0 +1,16 @@
+package prac2;
+
+public class Default {
+	
+	public static void main(String []args) {
+		
+		
+		
+		int height, length;
+		height = 10;
+		length = 20;
+		System.out.println(height + length);
+	}
+		
+
+}

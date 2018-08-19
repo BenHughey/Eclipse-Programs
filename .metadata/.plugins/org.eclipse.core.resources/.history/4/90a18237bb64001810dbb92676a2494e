@@ -1,0 +1,20 @@
+package Memory;
+import javax.swing.JButton;
+
+public class Card extends JButton {
+	private boolean selected = false;
+	private boolean matched = false;
+	
+	private String iconName = null;
+	public void setIconName(String s) {
+		iconName = s;
+		
+	}
+	public boolean getSelected() {
+		return selected;
+		
+	}
+	
+	
+
+}

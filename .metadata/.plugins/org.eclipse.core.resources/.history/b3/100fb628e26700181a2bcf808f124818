@@ -1,0 +1,14 @@
+package prac2;
+
+public class Default {
+	
+	  
+
+	    public static void main(String[] args) {
+	    	private double x;
+	       double y;
+
+	       System.out.println(x);
+		
+	    }
+}

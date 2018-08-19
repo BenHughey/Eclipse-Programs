@@ -1,0 +1,36 @@
+package test;
+import java.util.Arrays;
+
+public class ArraysProject {
+	
+	public static void main(String[] args) {
+		
+		// Creates new array of integers
+		int myArray[] = new int[10];
+		
+		//loops through array and adds a random integer between 0 and 10
+		for (int i = 0; i <10; i++) {
+			myArray[i] =(int) Math.round( Math.random() * 10 ); 
+			
+		}
+		
+		//Sorts myArray numerically
+		Arrays.sort(myArray);
+		
+		//Searches for number 6 in the array
+		int bSearchResult  =  Arrays.binarySearch(myArray, 6); 
+		System.out.println("binary search result: " + bSearchResult);
+		
+		//Prints all array elements to console
+		for (int i = 0; i <10; i++) {
+			
+			System.out.println(myArray[i]);
+		}
+		
+
+		
+		
+		
+	}
+
+}

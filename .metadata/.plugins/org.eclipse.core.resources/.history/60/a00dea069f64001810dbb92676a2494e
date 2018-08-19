@@ -1,0 +1,12 @@
+package Memory;
+import javax.swing.JButton;
+
+public class Card extends JButton {
+	private boolean selected = false;
+	private boolean matched = false;
+	
+	//this.addActionListener(new selectListener());
+	
+	
+
+}

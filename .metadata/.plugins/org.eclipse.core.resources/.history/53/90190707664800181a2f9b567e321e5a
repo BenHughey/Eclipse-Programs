@@ -1,0 +1,16 @@
+import java.io.Serializable;
+public abstract class Shape implements Serializable {
+	
+		private int width;
+		
+			
+		public void setWidth(int wdth) {
+			width = wdth;
+		}
+		
+		public int getWidth() {
+			return width;
+		}
+
+
+}

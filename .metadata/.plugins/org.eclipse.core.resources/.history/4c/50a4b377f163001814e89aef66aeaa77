@@ -1,0 +1,34 @@
+package Memory;
+import java.awt.Color;
+import java.awt.GridLayout;
+import java.awt.Image;
+
+import javax.imageio.ImageIO;
+import javax.swing.*;
+
+public class Game {
+	public static void main (String[]args) {
+		Board gui = new Board();
+		
+		
+		gui.setSize(1000, 800);
+		gui.setBackground(Color.BLACK);
+		
+		
+		gui.displayCards();
+		
+		gui.setVisible(true);
+		gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
+		
+		
+	}
+
+		  
+	
+}
+	
+	
+

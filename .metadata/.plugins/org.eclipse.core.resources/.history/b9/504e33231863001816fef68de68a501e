@@ -1,0 +1,28 @@
+package Memory;
+import java.awt.Color;
+import java.awt.GridLayout;
+
+import javax.swing.*;
+
+public class Game {
+	public static void main (String[]args) {
+		Board gui = new Board();
+		
+		gui.setLayout(new GridLayout(5, 4));
+		gui.setSize(1000, 800);
+		gui.setBackground(Color.BLACK);
+		gui.add(new JButton ("button2"));
+		//gui.add(card1);
+		
+		gui.setVisible(true);
+		gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+}

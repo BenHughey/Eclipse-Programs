@@ -1,0 +1,33 @@
+
+public class TestShapeProject {
+
+	public static void main(String[] args) {
+		
+		Rectangle rect[] = new Rectangle[3];
+		
+		rect[0] = new Rectangle();
+		rect[1] = new Rectangle();
+		rect[2] = new Rectangle();
+		
+		rect[0].setLength(50);
+		rect[0].setWidth(20);
+		
+		rect[1].setLength(45);
+		rect[1].setWidth(15);
+		
+		rect[2].setLength(70);
+		rect[2].setWidth(30);
+		
+		
+		for(Rectangle x : rect ) {
+			
+			int counter = 0;
+			
+			System.out.println("The area of rectangle " + counter + " is " +x.calculateArea());
+			
+			counter++; 
+		}
+		
+	}
+
+}

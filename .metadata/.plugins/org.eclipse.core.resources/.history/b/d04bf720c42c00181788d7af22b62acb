@@ -1,0 +1,13 @@
+package test;
+
+public class variableDeclarations {
+	
+	public static void main(String[] args) {
+		
+		int height, int length;
+		height = 50;
+		length = 30;
+		System.out.println(length + height);
+	}
+
+}
